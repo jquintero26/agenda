@@ -1,0 +1,32 @@
+Nuevo plugin de agenda.
+<br/>
+Pasos realizados para la creación del plugin de agenda en FacturaScripts.
+
+1. realizamos todo el vídeo 6 y 7 de los links adjuntos, que consisten en la creación del plugin de ingresar, actualizar, consultar y eliminar
+una tarea, la cual tiene conexion con una base de datos en mysql creada manualmente.
+
+Video 6:
+https://www.youtube.com/watch?v=qW3h2lJTqOA
+
+Video 7:
+https://www.youtube.com/watch?v=fLjmsBoYMfM
+
+2. llegamos a la interpretación de la guía del vídeo 8 del link adjunto, que consiste en la misma funcionalidad de los videos antes mencionados,
+pero con la creación de la tabla automaticamente con el archivo XML al momento de activar el plugin en FacturaScripts.
+
+Video 8:
+https://www.youtube.com/watch?v=G4OxvfIFDCA
+
+Los errores que tuvimos en la práctica del video 8 fuerón:
+* Al activar el plugin no reconocia la pagina, nos mostraba error en la vista.
+  Solución: Corregimos unas condiciones en la vista del scripts agenda_inicio.html del seudocódigo ya que estaba generando conflicto por corchetes mal cerrados.
+
+* Después de la corrección del punto anterior, borramos la tabla de agenda y al activar nuevamente el plugin no crea la la tabla con el archivo XML mostrando
+  el error de 'facturascripts.agenda' doesn't exist.
+  Solución: Se consulto con la pagina de FacturaScripts en la opción de preguntas indicando nuestro error para solicitar ayuda de la comunidad
+  para solucionar el error, se obtuvo respuesta de NeoRazorX via electrónica indicando que nos hacia falta una variable en el modelo de tarea_agenda.php y
+  el nombre de la tabla en todos los scripts ya que debe ser igual en todas las variables para su correcta funcionalidad.
+
+  Cordialmente,
+
+  eledesma y jquintero26 en github.
